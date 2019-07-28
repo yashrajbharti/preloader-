@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>preloader</title>
+  <link rel="stylesheet" href="s.css">
+</head>
+<body>
+  <div class="main">
+    <h1>hej hur ar laget</h1>
+    <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor .
+      </p>
+  </div>
+
+<script type="text/javascript">
+document.querySelector('.main p').style.display='none';
+document.querySelector('.main').classList.add('spinner-2');
+setTimeout(() => {
+  document.querySelector('.main').classList.remove('spinner-2');
+  document.querySelector('.main p').style.display='block';
+},4000);
+
+</script>
+</body>
+</html>
